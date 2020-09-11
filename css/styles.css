@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #d5e2ec;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+h1 {
+    color: hsl(179, 62%, 43%);
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.container {
+    margin: 40px auto;
+    width: 660px;
+    max-width: 1440px;
+}
+
+.top p {
+    color: hsl(218, 22%, 67%);
+}
+
+.top,
+.left,
+.right {
+    padding: 20px 40px;
+}
+
+.top {
+    background: #fff;
+    border-radius: 10px 10px 0 0;
+}
+
+.top h2 {
+    color: hsl(71, 73%, 54%);
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-around;
+}
+
+.left {
+    width: 50%;
+    background: hsl(179, 62%, 43%);
+    border-radius: 0 0 0 10px;
+    color: #fff;
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.per-month {
+    color: hsl(179, 70%, 75%);
+    position: relative;
+    bottom: 5px;
+    left: 5px
+}
+
+.sign-up {
+    background: hsl(71, 73%, 54%);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 3px 5px 3px hsl(179, 30%, 43%);
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Karla', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin: 15px 0;
+    outline: none;
+    padding: 15px;
+    transition: all .2s ease-in-out;
+    width: 100%;
+}
+
+.sign-up:hover {
+    transform: scale(1.05);
+}
+
+.right {
+    width: 50%;
+    background: hsl(179, 62%, 45%);
+    border-radius: 0 0 10px 0;
+    color: #fff;
+}
+
+ul {
+    color: hsl(179, 70%, 75%);
+    list-style-type: none;
+    padding-left: 0;
+}
+
+@media (max-width: 730px) {
+    .container {
+        width: 90%;
+    }
+
+    .bottom {
+        display: block;
+        width: 100%;
+    }
+
+    .left {
+        border-radius: 0;
+        width: 100%;
+    }
+
+    .right {
+        border-radius: 0 0 10px 10px;
+        width: 100%;
+    }
+}
